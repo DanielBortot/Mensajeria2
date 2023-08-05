@@ -1,0 +1,147 @@
+.lista {
+    width: 30%;
+    height: 100vh;
+    background-color: #121212;
+    overflow-y: scroll;
+}
+
+.cuadro {
+    color: white;
+    cursor: pointer;
+}
+
+.inicio {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.cuadro:hover {
+    background-color: #283c49;
+}
+
+.chatContainer {
+    background-image: url(./fondoChat.jpg);
+    background-size: contain;
+    max-height: 100vh;
+    position: relative;
+}
+
+.barraChat {
+    box-sizing: border-box;
+    background-color: #202c33;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.textoNombre {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #202c33;
+    width: 100%;
+    height: 64px;
+    padding: 10px;
+}
+
+.cuadroTexto {
+    max-height: calc(100vh - 124px);
+    overflow-y: scroll;
+    box-sizing: border-box;
+    color: white;
+    padding-left: 10px;
+}
+
+.input {
+    width: 90%;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2a3942;
+    border: 1px solid #2a3942;
+    color: #d1d7db;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-right: 20px;
+}
+
+.icon {
+    color: #3e5361;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.mensajeContainer {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.mensaje1 {
+    position: relative;
+    margin-left: 2%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: fit-content;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mensaje1::before {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-right: 12px solid blue;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    top: 4px;
+    left: -10px;
+}
+
+.mensaje2 {
+    position: relative;
+    margin-left: 92%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: fit-content;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.mensaje2::before {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid grey;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    top: 4px;
+    right: -10px;
+}
+
+.enviarMsg {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
