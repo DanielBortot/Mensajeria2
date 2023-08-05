@@ -4,8 +4,7 @@ import { fileURLToPath } from 'url';
 import mongoose from 'mongoose';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-dotenv.config({path: join(__dirname, '/./.env')})
-console.log(process.env.USER_DB)
+dotenv.config({path: join(__dirname, '/../.././.env')})
 
 const database = () => {
     mongoose.connect(`mongodb+srv://${process.env.USER_DB}:${process.env.PASSWORD}@cluster0.qthwx5f.mongodb.net/mensajeria`, {useNewUrlParser: true})
