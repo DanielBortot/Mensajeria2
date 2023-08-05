@@ -1,5 +1,4 @@
 {
-  "homepage": "http://DanielBortot.github.io/Mensajeria2",
   "name": "server",
   "version": "1.0.0",
   "description": "",
@@ -8,8 +7,7 @@
   "scripts": {
     "start": "node server/src/index.js",
     "dev": "nodemon server/src/index.js",
-    "build": "npm run --prefix client build",
-    "deploy": "gh-pages -d build"
+    "build": "npm run --prefix client build"
   },
   "keywords": [],
   "author": "",
